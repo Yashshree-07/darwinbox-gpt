@@ -1,0 +1,13 @@
+<div>
+    <h2>Tickets</h2>
+    <div id="sample-tickets" style="background:#f8f9fa; border-radius:8px; padding:10px 14px; margin-bottom:14px;">
+        <ul style="margin:0;">
+            <li onclick="showSampleTicketDetails(123)" style="cursor:pointer;"><strong>Ticket #123:</strong> Login issue - <span style="color:#d9534f;">Open</span></li>
+            <li onclick="showSampleTicketDetails(456)" style="cursor:pointer;"><strong>Ticket #456:</strong> Payroll discrepancy - <span style="color:#f0ad4e;">In Progress</span></li>
+            <li onclick="showSampleTicketDetails(789)" style="cursor:pointer;"><strong>Ticket #789:</strong> App crash on iOS - <span style="color:#28a745;">Resolved</span></li>
+        </ul>
+    </div>
+    <div id="ticket-details"></div>
+    <div id="tickets-loading" style="display:none; color: #007BFF; margin-bottom: 10px;">Loading...</div>
+    <ul id="ticket-list"></ul>
+</div>

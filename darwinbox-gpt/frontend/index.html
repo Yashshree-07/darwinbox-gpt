@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darwinbox GPT Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Darwinbox GPT Assistant</h1>
+    <div id="menu">
+        <button onclick="loadComponent('chat')">Chat</button>
+        <button onclick="loadComponent('tickets')">Tickets</button>
+        <button onclick="loadComponent('nudges')">Nudges</button>
+        <button onclick="loadComponent('email')">Emails</button>
+    </div>
+    <div id="content"></div>
+
+    <!-- Floating Nudges Button and Popup -->
+    <button id="nudges-fab" onclick="toggleNudgesPopup()">🔔 Nudges</button>
+    <div id="nudges-popup" style="display:none;">
+        <div id="nudges-popup-header">
+            <span>Nudges</span>
+            <button onclick="toggleNudgesPopup()" style="float:right;">✖</button>
+        </div>
+        <ul id="nudges-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="scripts/nudges.js"></script>
+</body>
+</html>
+
